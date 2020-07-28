@@ -1,0 +1,79 @@
+.main{
+    background: url("background.png");
+}
+body{
+    background-color: rgb(12, 12, 36);
+}
+@keyframes jumboBtn{
+    from{ background-color: blue;}
+    to  { background-color: green;}
+}
+.navbar{
+    background-color: #379683;
+    /* margin-bottom: 56px; */
+}
+
+.jumbotron{
+    background-color: #67b6a6;
+    color: floralwhite;
+    padding: 10px;
+    margin-top: 56px;
+}
+.carousel {
+    background: #948ea3; 
+    margin-bottom: 10px;
+    margin-left: 10px; 
+      margin-right: 10px;
+    }
+    .carousel .carousel-item {
+      height: 300px;
+      ;}
+      .carousel .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 300px; }
+  
+  #carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1; }
+.btn:hover{
+    animation-name: jumboBtn;
+    animation-duration: 5s;
+    background-color: green;
+}
+
+.lead{
+    align-items: center;
+    text-align: right;
+}
+.teacher-card{
+    background-color: rgb(161, 129, 235);
+}
+.t-box{
+    border: 2px solid rgb(54, 47, 47);
+    margin: 0px;
+    background-color: darkmagenta;
+}
+.footer {
+    background-color:#4ea594;
+     }
+
+.container-fluid{
+    width: 100%;
+}
+.list-unstyled{
+    color: black;
+}
+.form-check{
+    font-size: larger;
+}
+.form-box{
+    background-color: #5cdb95;
+    /* background-color: #67b6a6; */
+    color: floralwhite;
+    padding: 10px;
+    margin-top: 56px;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>myTutor</title>
+</head>
+<body >
+<div class="main">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <button class="navbar-toggler" data-toggle = "collapse" data-target= "#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+        <a href="./index.html" class="navbar-brand"><span class="fa fa-book fa-lg"></span></a>
+        <div class="navbar-collapse collapse" id="navCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link active"><span class="fa fa-home fa-lg"></span> Home</a>
+                </li>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                
+            </ul>
+            <span class="navbar-text">
+                <a href="#">Join As a teacher</a>
+            </span>
+        </div>
+    </nav>
+</div>
+    <!--Teacher Personal Detail section-->
+      <div class="container-fluid form-box">
+          <div class="row">
+              <div class="col-md-2 col-sm-2 col-xs-12"></div>
+              <div class="col-md-6 col-sm-6 col-12">
+                  <form class="needs-validation" action="#" novalidate>
+                    <h1 class="text-center">Teacher Sign Up</h1>
+                    <hr>
+                    <h3>Personal Details</h3>
+                      <div class="form-group">
+                          <label for="fname">First Name:</label>
+                          <input type="text" class="form-control" id="fname" name="fname" placeholder="first name" required>
+                          <div class="invalid-tooltip">please enter you name</div>
+
+                      </div>
+                      <div class="form-group">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name" required>
+                             <div class="invalid-tooltip">please enter you name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailid">Email:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="emailPrepend">@</span>
+                                  </div>
+                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="xyz@gmail.com" required>
+                            <div class="invalid-tooltip">Please choose a unique and valid username.</div>
+                        </div>
+                    </div>
+                    <fieldset class="form-group">
+                        <div class="row">
+                          <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="rd" id="male" value="male" >
+                              <label class="form-check-label" for="male">
+                                Male
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="rd" id="female" value="female">
+                              <label class="form-check-label" for="female">
+                                Female
+                              </label>
+                            </div>
+                            <div class="form-check ">
+                              <input class="form-check-input" type="radio" name="rd" id="other" value="other" >
+                              <label class="form-check-label" for="other">
+                                Other
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <div class="form-group">
+                         <label for="dob">DOB:</label>
+                         <div class="input-group-date">
+                             <input type="date" class="form-control" name="dob" id="dob" placeholder="mm/dd/yyyy">
+                        </div>
+                      </div>
+                    <div class="form-group">
+                        <label for=nbr>Contact No.</label>
+                        <input type="text" class="form-control" id="number" pattern="[0-9]{10}" placeholder="mobile number" required>
+                        <div class="invalid-tooltip">please enter you contact no.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for=wnumber>WhatsApp No.</label>
+                        <input type="number" class="form-control" id="wnumber" placeholder="WhatsApp number" required>
+                        <div class="invalid-tooltip">please enter you WhatsApp no.</div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="wnumber" id="wnumber">
+                            <label for="wnumber">
+                              if same as mobile number
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" class="form-control" id="city" name="city" placeholder="city" required>
+                        <div class="invalid-tooltip">please enter you city</div>
+                     </div>
+                     <div class="form-group">
+                        <label for="area">Area:</label>
+                        <input type="text" class="form-control" id="area" name="area" placeholder="area" required>
+                        <div class="invalid-tooltip">please enter you area</div>
+                     </div>
+                     <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="textarea" class="form-control" id="address" name="address" placeholder="address"  required>
+                        <div class="invalid-tooltip">please enter you address</div>
+                     </div>
+                     <div class="form-group">
+                        <label for="pincode">Pincode:</label>
+                        <input type="number" class="form-control" id="pincode" name="pincode" placeholder="pincode" required>
+                        <div class="invalid-tooltip">please enter you pincode</div>
+                     </div>
+                      <h3>Class Taken By Tutor</h3>
+                      <hr>
+                      <div class="form-check ">
+                        <input class="form-check-input " type="checkbox" name="tclass" id="c1-5">
+                          <label for="c1-5">
+                            Class 1 - 5
+                          </label><br>
+                          <input class="form-check-input " type="checkbox" name="tclass" id="c6-8">
+                          <label for="c6-8">
+                            Class 6 - 8
+                          </label><br>
+                          <input class="form-check-input " type="checkbox" name="tclass" id="c9-10">
+                          <label for="c9-10">
+                            Class 9 - 10
+                          </label><br>
+                          <input class="form-check-input " type="checkbox" name="tclass" id="c11-12">
+                          <label for="wnumber">
+                            Class 11 - 12
+                          </label><br>
+                      </div>
+                    <button class="btn btn-primary btn-block" type="submit">Submit form</button>
+                  </form>
+              </div>
+              <div class="col-md-3 col-sm-2 col-xs-12"></div>
+          </div>
+      </div>
+<footer class="footer">
+  <div class="container-fluid">
+      
+      <div class="row">             
+  <div class="col-4 offset-1 col-sm-2">
+    <h5>Choose your Stream</h5>
+    <ul class="list-unstyled">
+      <li><a href="#">Class 1-5</a></li>
+      <li><a href="./aboutus.html">Class 6-8</a></li>
+                  <li><a href="./contactus.html">Class 9-10</a></li>
+                  <li><a href="#">Class 11-12</a></li>
+    </ul>
+  </div>
+
+  <div class="col-7 col-sm-5">
+    <h5>Our Address</h5>
+    <address>
+      Patna,Bihar,India<br>
+      <i class="fa fa-phone fa-lg"></i>: +919876543210<br>
+      <i class="fa fa-fax fa-lg"></i>: +919876543210<br>
+      <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:xyz@gmail.com">xyz</a>
+    </address>
+  </div>
+
+  <div class="col-12 col-sm-4 align-self-center">
+    <div class="text-center">
+      <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+      <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+      <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+      <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+      <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+      <a class="btn btn-social-icon btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="row justify-content-center">             
+  <div class="col-auto">
+    <p>© Copyright 2020 myTutor</p>
+  </div>
+</div>
+
+</footer>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    //carousel script
+    $('#mycarousel').carousel({interval: 2000});
+    $('#carouselButton').click(function(){
+        if($('#carouselButton').children('span').hasClass('fa-pause')){
+            $('#mycarousel').carousel('pause');
+            $('#carouselButton').children('span').removeClass('fa-pause');
+            $('#carouselButton').children('span').addClass('fa-play');
+        }
+        else if($('#carouselButton').children('span').hasClass('fa-play')){
+            $('#mycarousel').carousel('cycle');
+            $('#carouselButton').children('span').removeClass('fa-play');
+            $('#carouselButton').children('span').addClass('fa-pause');
+        }
+            
+    });
+}
+    </script>
+</body>
+</html>
